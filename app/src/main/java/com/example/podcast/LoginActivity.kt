@@ -63,13 +63,13 @@ fun LoginScreen(context: Context, databaseHelper: UserDatabaseHelper) {
         modifier = Modifier
             .padding(16.dp)
             .fillMaxWidth(),
-        backgroundColor = Color.Black
+        backgroundColor = Color.White
     ) {
 
 
         Column(
             Modifier
-                .background(Color.Black)
+                .background(Color.White)
                 .fillMaxHeight()
                 .fillMaxWidth()
                 .padding(bottom = 28.dp, start = 28.dp, end = 28.dp),
@@ -112,7 +112,7 @@ fun LoginScreen(context: Context, databaseHelper: UserDatabaseHelper) {
                 placeholder = {
                     Text(
                         text = "username",
-                        color = Color.White
+                        color = Color.Black
                     )
                 },
                 colors = TextFieldDefaults.textFieldColors(
@@ -133,7 +133,7 @@ fun LoginScreen(context: Context, databaseHelper: UserDatabaseHelper) {
                         tint = Color(0xFF6a3ef9)
                     )
                 },
-                placeholder = { Text(text = "password", color = Color.White) },
+                placeholder = { Text(text = "password", color = Color.Black) },
                 visualTransformation = PasswordVisualTransformation(),
                 colors = TextFieldDefaults.textFieldColors(backgroundColor = Color.Transparent)
             )

@@ -58,7 +58,7 @@ fun RegistrationScreen(context: Context, databaseHelper: UserDatabaseHelper) {
 
     Column(
         Modifier
-            .background(Color.Black)
+            .background(Color.White)
             .fillMaxHeight()
             .fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -93,7 +93,7 @@ fun RegistrationScreen(context: Context, databaseHelper: UserDatabaseHelper) {
             placeholder = {
                 Text(
                     text = "username",
-                    color = Color.White
+                    color = Color.Black
                 )
             },
             colors = TextFieldDefaults.textFieldColors(
@@ -114,7 +114,7 @@ fun RegistrationScreen(context: Context, databaseHelper: UserDatabaseHelper) {
                     tint = Color(0xFF6a3ef9)
                 )
             },
-            placeholder = { Text(text = "password", color = Color.White) },
+            placeholder = { Text(text = "password", color = Color.Black) },
             visualTransformation = PasswordVisualTransformation(),
             colors = TextFieldDefaults.textFieldColors(backgroundColor = Color.Transparent)
         )
@@ -132,7 +132,7 @@ fun RegistrationScreen(context: Context, databaseHelper: UserDatabaseHelper) {
                     tint = Color(0xFF6a3ef9)
                 )
             },
-            placeholder = { Text(text = "email", color = Color.White) },
+            placeholder = { Text(text = "email", color = Color.Black) },
             colors = TextFieldDefaults.textFieldColors(backgroundColor = Color.Transparent)
         )
 
@@ -198,7 +198,7 @@ fun RegistrationScreen(context: Context, databaseHelper: UserDatabaseHelper) {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center
         ) {
-            Text(text = "Have an account?", color = Color.White)
+            Text(text = "Have an account?", color = Color.Black)
 
             TextButton(onClick = {
                 context.startActivity(
